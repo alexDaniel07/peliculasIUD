@@ -45,3 +45,5 @@ const Media = Schema({
     type:String
   }
 })
+
+module.exports = model('moduloMedia', Media)

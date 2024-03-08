@@ -42,3 +42,5 @@ const Productora = Schema({
     required: true
   }
 })
+
+module.exports = model('moduloProductora', Productora)

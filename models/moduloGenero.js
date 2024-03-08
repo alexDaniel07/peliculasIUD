@@ -38,3 +38,5 @@ const Genero = Schema ({
   }
 })
 
+
+module.exports = model('moduloGenero', Genero)

@@ -24,5 +24,6 @@ const Director = Schema ({
     type: Date,
     required: true
    }
-
 })
+
+module.exports = model('moduloDirector', Director)

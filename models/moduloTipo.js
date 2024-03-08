@@ -5,7 +5,7 @@ IV. Descripción*/
 
 const {Schema, model} = require('mongoose')
 
-const Tipo = Screma({
+const Tipo = Schema({
   nombre: {
     type: String,
     required: true
@@ -25,3 +25,5 @@ const Tipo = Screma({
     required: true
   }
 })
+
+module.exports = model('moduloTipo', Tipo)
