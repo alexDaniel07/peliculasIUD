@@ -10,4 +10,3 @@ router.get('/', function(req, res, next) {
 module.exports = router;
 // https://github.com/dcortesnet/Nodejs-express-mongoose-mongodb/blob/master/index.js
 // https://www.digitalocean.com/community/tutorials/how-to-integrate-mongodb-with-your-node-application-es
-

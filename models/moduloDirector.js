@@ -15,7 +15,7 @@ const Director = Schema ({
      ]
   },
 
-  fechaCreación: {
+  fechaCreacion: {
     type: Date,
     required: true
   }
