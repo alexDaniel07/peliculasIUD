@@ -17,12 +17,7 @@ router.get('/', function(req, res, next) {
 router.post('/creaDirector', async (req, res)=>{
   try{
 
-    const director = await Director.create(
-               Director.nombre = req.body.nombre,
-               Director.estado = req.body.estado,
-               Director.fechaCreacion = req.body.fechaCreacion,
-               Director.fechaActualizacion = req.body.fechaActualizacion
-    )
+    const director = await Director.create(req.body)
     res.status(200).json(director)
   }catch (error) {
     res.status(500).json({message: error.message})

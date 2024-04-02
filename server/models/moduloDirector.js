@@ -9,9 +9,9 @@ const Director = Schema ({
 
   Estado:{
      type: String,
-     required: true,
+    // required: true,
      enun:[
-         'activo', 'inactivo'
+         '', 'Activo', 'Inactivo'
      ]
   },
 
