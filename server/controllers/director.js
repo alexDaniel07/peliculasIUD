@@ -2,6 +2,7 @@ const { check, validationResult } = require('express-validator');
 const Director = require('../models/moduloDirector')
 const director ={};
 
+
 // Crear un nuevo director
 director.crear =
 
@@ -36,5 +37,6 @@ director.crear =
       console.log(error)
     }
 };
+
 
 module.exports = director;
