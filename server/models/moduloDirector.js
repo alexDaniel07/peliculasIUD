@@ -1,6 +1,6 @@
 
-const {Schema, model} = require('mongoose');
-
+const {Schema} = require('mongoose');
+const mongoose = require('mongoose')
 const Director = Schema ({
   nombre: {
     type: String,
@@ -11,7 +11,7 @@ const Director = Schema ({
      type: String,
     // required: true,
      enun:[
-         '', 'Activo', 'Inactivo'
+         'activo', 'inactivo'
      ]
   },
 
@@ -26,4 +26,4 @@ const Director = Schema ({
    }
 })
 
-module.exports = model('moduloDirector', Director)
+module.exports = mongoose.model('moduloDirector', Director)
