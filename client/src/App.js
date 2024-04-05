@@ -1,4 +1,4 @@
-import React from "react";
+
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 import { Header } from "./component/ui/header";
 import { MediaView } from "./component/media/mesiaWiew";
@@ -6,8 +6,14 @@ import { GeneroView } from "./component/genero/generoWiew";
 import { ProductoraView } from "./component/productora/productoraWiew";
 import { DirectorView } from "./component/director/DirectorView";
 import { TipoView } from "./component/tipo/tipoWiew";
+import { useFetch } from "./fetch/fetch";
 
 const App = ()=>{
+
+  const {data, loading} = useFetch(
+      'http://localhost:3000/users/directors'
+  );
+
   return(
       <Router>
         <Header />
