@@ -3,7 +3,7 @@ import React from "react";
 export const ProductoraView = (props) => {
     return (
         <div>
-            ProductoraView
+           <p>hola proguctora</p> ProductoraView
         </div>
     );
 }

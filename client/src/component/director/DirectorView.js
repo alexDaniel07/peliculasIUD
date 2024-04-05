@@ -6,6 +6,7 @@ import React from 'react';
 export const DirectorView = (props) => {
   return (
     <div>
+      <h1>Director</h1>
       DirectorView
     </div>
   );
