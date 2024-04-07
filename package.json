@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "mongodb": "^6.5.0",
-    "react-router-dom": "^5.2.0"
-  }
-}

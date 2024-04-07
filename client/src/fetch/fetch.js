@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-export function useFetch(url) {
+export function UseFetch(url) {
   const [data, setData] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
