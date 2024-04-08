@@ -5,13 +5,13 @@ export function UseFetch(url) {
   const [error, setError] = React.useState(false);
 
   useEffect(() => {
-    const abortController = new AbortController();
-    fetch(url, {signal: abortController.signal})
+   // const abortController = new AbortController();
+    fetch(url, /*{signal: abortController.signal}*/)
         .then((response)=> response.json())
         .then((data)=> setData(data))
         .finally (()=> setLoading(false))
 
-    return() => abortController.abort
+ //   return() => abortController.abort
   }, []);
 
   return {data}
